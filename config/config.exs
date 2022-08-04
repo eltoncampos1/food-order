@@ -8,7 +8,8 @@
 import Config
 
 config :food_order,
-  ecto_repos: [FoodOrder.Repo]
+  ecto_repos: [FoodOrder.Repo],
+  generators: [:binary_id, true]
 
 # Configures the endpoint
 config :food_order, FoodOrderWeb.Endpoint,
