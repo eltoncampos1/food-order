@@ -11,4 +11,8 @@ defmodule FoodOrder.Products do
   end
 
   def change_product(params), do: Product.changeset(params)
+
+  def change_product(product, params) do
+    Product.changeset(product, params)
+  end
 end

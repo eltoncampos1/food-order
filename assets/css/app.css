@@ -42,7 +42,7 @@ nav li a:hover {
 }
 
 .btn-primary {
-  background: var(--primary);
+  background: var(--primary) !important;
   transition: var(--smooth);
   -webkit-transition: var(--smooth);
   -moz-transition: var(--smooth);
@@ -51,7 +51,7 @@ nav li a:hover {
 }
 
 .btn-primary:hover {
-  background: var(--primary-hover);
+  background: var(--primary-hover) !important;
 }
 
 .size {

@@ -1,8 +1,8 @@
 <div id={@id}>
- <.form let={f} for={@changeset}  class="bg-white shadow-md rounde px-8 pt-6 pb-8 mb-4" >
+ <.form let={f} for={@changeset}  class="bg-white shadow-md rounde px-8 pt-6 pb-8 mb-4" phx-change="validate" phx-target={@myself}>
     <div class="mb-4">
         <%= label f, :name, "Name", class: "block text-gray-700 text-sm font-bold mb-2" %>
-        <%= text_input f, :name, placeholder: "Name", class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+        <%= text_input f, :name, class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
         <%= error_tag f, :name %>
     </div>
 
@@ -25,7 +25,7 @@
     </div>
 
     <div class="flex items-center">
-            <%= submit "Create Product", phx_disable_with: "...creating", class: "btn-primary rounded-full text-sm text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" %>
+            <%= submit "Create Product", phx_disable_with: "...creating", class: "btn-primary rounded-full text-sm text-white font-bold py-2 px-4 focus:outline-none focus:shadow-outline" %>
     </div>
  </.form>
 </div>
