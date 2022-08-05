@@ -94,6 +94,7 @@ defmodule FoodOrderWeb do
 
       # Import basic rendering functionality (render, render_layout, etc)
       import Phoenix.View
+      import FoodOrderWeb.LiveHelpers
 
       import FoodOrderWeb.ErrorHelpers
       import FoodOrderWeb.Gettext

@@ -19,10 +19,13 @@
                 <td class="px-4 py-3 border"><%= product.size %></td>
                 <td class="px-4 py-3 border"><%= product.description %></td>
                 <td class="px-4 py-3 border">Show | Edit | Delete</td>
-
             </tr>
         <% end %>
         </tbody>
     </table>
     </div>
 </section>
+
+<.modal >
+    <.live_component module={Form} id="form" />
+</.modal>

@@ -1,6 +1,7 @@
 defmodule FoodOrderWeb.Admin.ProductLive do
   use FoodOrderWeb, :live_view
 
+  alias FoodOrderWeb.Admin.Products.Form
   alias FoodOrder.Products
 
   def mount(_params, _session, socket) do
