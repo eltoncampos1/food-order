@@ -1,26 +1,26 @@
 <div id={@id}>
- <.form let={f} for={@changeset}  class="bg-white shadow-md rounde px-8 pt-6 pb-8 mb-4" phx-change="validate" phx-target={@myself}>
+ <.form let={f} for={@changeset}  class="bg-white shadow-md rounde px-8 pt-6 pb-8 mb-4" phx-submit="save" phx-change="validate" phx-target={@myself}>
     <div class="mb-4">
-        <%= label f, :name, "Name", class: "block text-gray-700 text-sm font-bold mb-2" %>
-        <%= text_input f, :name, class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+        <%= label f, :name, "Name",  class: "block text-gray-700 text-sm font-bold mb-2" %>
+        <%= text_input f, :name, phx_debounce: "400", class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
         <%= error_tag f, :name %>
     </div>
 
     <div class="mb-4">
         <%= label f, :description, "Description", class: "block text-gray-700 text-sm font-bold mb-2" %>
-        <%= textarea f, :description, class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+        <%= textarea f, :description, phx_debounce: "400", class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
         <%= error_tag f, :description %>
     </div>
 
     <div class="mb-4">
         <%= label f, :size, "Size", class: "block text-gray-700 text-sm font-bold mb-2" %>
-        <%= text_input f, :size, class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+        <%= text_input f, :size, phx_debounce: "400", class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
         <%= error_tag f, :size %>
     </div>
 
     <div class="mb-4">
         <%= label f, :price, "Price", class: "block text-gray-700 text-sm font-bold mb-2" %>
-        <%= text_input f, :price, class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
+        <%= text_input f, :price, phx_debounce: "400", class: "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" %>
         <%= error_tag f, :price %>
     </div>
 

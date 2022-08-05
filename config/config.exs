@@ -29,6 +29,9 @@ config :tailwind,
     cd: Path.expand("../assets", __DIR__)
   ]
 
+config :money,
+  default_currency: :BRL
+
 # Configures the mailer
 #
 # By default it uses the "Local" adapter which stores the emails
